@@ -2,6 +2,12 @@
 #include <math.h>
 #include <conio.h>
 
+/**
+ * @brief converts a number from base 10 to any other base
+ * 
+ * @param n the number to be converted
+ * @param r the base of the number system
+ */
 void change(int n, int r)
 {
     int count = 0;
