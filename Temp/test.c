@@ -182,7 +182,7 @@ int main()
 }
 #endif
 
-#if 1
+#if 0
 char a[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 char *pa;
 int *pb;
@@ -195,4 +195,17 @@ int main()
     return 0;
 }
 
+#endif
+
+#if 1
+
+int main()
+{
+   char str[80];
+
+   sprintf(str, "Gia tri cua Pi = %lf", M_PI);
+   puts(str);
+
+   return(0);
+}
 #endif
