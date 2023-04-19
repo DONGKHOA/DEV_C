@@ -44,11 +44,7 @@ int CIRCULAR_QUEUE_Is_Full(CIRCULAR_QUEUE_HandleTypeDef *circular_queue_x)
 
 int CIRCULAR_QUEUE_Is_Empty(CIRCULAR_QUEUE_HandleTypeDef *circular_queue_x)
 {
-    if (circular_queue_x->front == -1)
-    {
-        return TRUE;
-    }
-    return FALSE;
+    return (circular_queue_x->front == -1);
 }
 
 void CIRCULAR_QUEUE_Push_Data(CIRCULAR_QUEUE_HandleTypeDef *circular_queue_x, int element)
